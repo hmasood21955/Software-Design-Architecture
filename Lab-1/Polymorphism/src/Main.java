@@ -30,3 +30,4 @@ public class Main {
         Vehicle myBike = new Bike();
         Vehicle myPlane = new Plane();
         // Same method, different behavior
+        myCar.move();   // Output: Car is driving on the road.
