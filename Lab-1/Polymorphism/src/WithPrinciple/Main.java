@@ -1,4 +1,4 @@
-package Withpriniple;
+package WithPrinciple;
 
 class Vehicle {
     public void move() {
