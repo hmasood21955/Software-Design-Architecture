@@ -31,3 +31,4 @@ public class Main {
         Vehicle myPlane = new Plane();
         // Same method, different behavior
         myCar.move();   // Output: Car is driving on the road.
+        myBike.move(); // Output: Bike is pedaling on the street.
