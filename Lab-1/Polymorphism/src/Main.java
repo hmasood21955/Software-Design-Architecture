@@ -17,3 +17,10 @@ class Bike extends Vehicle {
         System.out.println("Bike is pedaling on the street.");
     }
 }
+
+class Plane extends Vehicle {
+    @Override
+    public void move() {
+        System.out.println("Plane is flying in the sky.");
+    }
+}
