@@ -1,4 +1,4 @@
-package WithoutPrincipal;
+package WithoutPrinciple;
 class Car {
     public void move() {
         System.out.println("Car is driving on the road.");
