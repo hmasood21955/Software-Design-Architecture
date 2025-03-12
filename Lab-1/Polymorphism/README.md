@@ -1,6 +1,3 @@
-Got it! Here's a **clean and concise README.md** without code snippets, focusing on explaining the concepts and differences:
-
----
 
 # Vehicle Movement Example
 
