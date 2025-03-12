@@ -29,3 +29,4 @@ public class Main {
         Vehicle myCar = new Car();
         Vehicle myBike = new Bike();
         Vehicle myPlane = new Plane();
+        // Same method, different behavior
