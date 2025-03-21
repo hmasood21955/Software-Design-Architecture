@@ -1,3 +1,4 @@
+package observer.basicobserverpattern;
 public class HexaObserver extends Observer{
 
     public HexaObserver(Subject subject){

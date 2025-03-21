@@ -1,5 +1,8 @@
+package observer.basicobserverpattern;
 import java.util.ArrayList;
 import java.util.List;
+
+import observer.basicobserverpattern.Observer;
 
 public class Subject {
 	

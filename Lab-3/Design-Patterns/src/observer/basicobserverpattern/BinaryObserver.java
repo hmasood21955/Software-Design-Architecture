@@ -1,3 +1,4 @@
+package observer.basicobserverpattern;
 public class BinaryObserver extends Observer{
 
     public BinaryObserver(Subject subject){

@@ -1,3 +1,4 @@
+package observer.basicobserverpattern;
 public class OctalObserver extends Observer{
 
     public OctalObserver(Subject subject){
