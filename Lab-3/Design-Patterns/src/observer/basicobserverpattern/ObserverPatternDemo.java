@@ -15,7 +15,7 @@ public class ObserverPatternDemo {
        subject.setState(15);  
 
        // ✅ Detach octalObserver instance (not class)
-       System.out.println("\nDetach OctalObserver...");
+       System.out.println("\nDetach HexaObserver...");
        subject.detach(hexaObserver);
 
        // ✅ Second update (only BinaryObserver and HexaObserver are left)
