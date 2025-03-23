@@ -4,7 +4,7 @@ public class Demo {
     public static void main(String[] args) {
         System.out.println("Creating a new file editor...");
         Editor editor = new Editor();
-    
+        
         System.out.println("Setting up notifications...");
         editor.events.subscribe("open", new LogOpenListener("file_log.txt"));
         editor.events.subscribe("save", new EmailNotificationListener("user@example.com"));
