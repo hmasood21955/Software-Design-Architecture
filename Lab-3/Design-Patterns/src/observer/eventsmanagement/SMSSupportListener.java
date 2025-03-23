@@ -10,3 +10,14 @@ public class SMSSupportListener implements EventListener {
         this.phoneNumber = phoneNumber;
     }
 
+    @Override
+    public void update(String eventType, File file) {
+        String message = "File " + file.getName() + " was " + eventType;
+
+        if (message.length() > MAX_SMS_LENGTH) {
+            System.out.println("WARNING: The SMS message is too long! It can't be more than " + MAX_SMS_LENGTH + " characters.");
+        } else {
+            System.out.println("SMS sent to " + phoneNumber + ": " + message);
+        }
+    }
+}
