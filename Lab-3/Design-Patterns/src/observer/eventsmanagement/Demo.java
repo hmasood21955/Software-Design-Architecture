@@ -14,9 +14,15 @@ public class Demo {
 
         try {
             editor.openFile("test.txt");
+            System.out.println("\n--- Testing file open ---");
+            editor.openFile("test_document.txt");
+            
+            System.out.println("\n--- Testing file save ---");
             editor.saveFile();
+            
         } catch (Exception e) {
             e.printStackTrace();
+            System.out.println("Oops! Something went wrong: " + e.getMessage());
         }
     }
 }
