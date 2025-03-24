@@ -26,5 +26,9 @@ public class Subject {
       for (Observer observer : observers) {
          observer.update();
       }
-   } 	
+   }
+
+   public void detach(Observer observer) {
+      observers.remove(observer);		
+   }
 }
