@@ -1,18 +1,105 @@
-## Getting Started
+Here's a simple and clear README template you can use for your GitHub repository. It covers the basic structure of an Observer Pattern implementation based on your screenshot.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+---
 
-## Folder Structure
+# Observer Pattern - Java Implementation
 
-The workspace contains two folders by default, where:
+This repository demonstrates the **Observer Design Pattern** implemented in Java. It was developed as part of the **Software Design and Architecture Lab-3** coursework.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 📚 Overview
+The **Observer Pattern** is a behavioral design pattern where an object (called the **Subject**) maintains a list of dependents (**Observers**) and notifies them automatically of any state changes. It's typically used to implement distributed event handling systems.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+This project demonstrates:
+- A `Subject` that holds a state.
+- Observers (`HexaObserver`, `BinaryObserver`, `OctalObserver`) that react to state changes.
+- A simple event notification system.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## 📁 Project Structure
+```
+src/
+├── EventManager/
+│   ├── Demo.java
+│   ├── Editor.java
+│   ├── EmailNotificationListener.java
+│   ├── EventListener.java
+│   ├── EventManager.java
+│   ├── LogOpenListener.java
+│   └── SMSSupportListener.java
+└── Observer/
+    ├── BinaryObserver.java
+    ├── HexaObserver.java
+    ├── OctalObserver.java
+    ├── Observer.java
+    ├── ObserverPatternDemo.java
+    └── Subject.java
+```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+## 🚀 How It Works
+
+1. **Subject.java**
+   - Holds the list of observers.
+   - Updates state and notifies all observers when a change occurs.
+
+2. **Observer.java (Interface)**
+   - Defines the `update()` method that each observer implements.
+
+3. **Concrete Observers**
+   - `BinaryObserver.java`
+   - `HexaObserver.java`
+   - `OctalObserver.java`
+   - These classes implement the `Observer` interface and display the subject's state in different formats.
+
+4. **ObserverPatternDemo.java**
+   - Demonstrates how to create a subject, attach observers, and change the subject's state.
+
+---
+
+## 🔧 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/observer-pattern-java.git
+   cd observer-pattern-java
+   ```
+
+2. Compile the Java files:
+   ```bash
+   javac src/Observer/*.java
+   ```
+
+3. Run the demo:
+   ```bash
+   java src/Observer/ObserverPatternDemo
+   ```
+
+---
+
+## 🛠️ Tools & Technologies
+- **Java SE 8+**
+- **VS Code** (with Red Hat Java extensions)
+- **Git**
+
+---
+
+## 📸 Screenshot
+
+![Observer Pattern Code](./path/to/your/screenshot.png)
+
+---
+
+## 📝 Author
+- [Your Name](https://github.com/your-username)
+- COMSATS University, Abbottabad
+
+---
+
+## 📄 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to adjust or expand this depending on what else you want to show! Want to add explanations of the event listeners too?
