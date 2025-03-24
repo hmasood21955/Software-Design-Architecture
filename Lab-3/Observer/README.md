@@ -1,6 +1,4 @@
-Here's a simple and clear README template you can use for your GitHub repository. It covers the basic structure of an Observer Pattern implementation based on your screenshot.
 
----
 
 # Observer Pattern - Java Implementation
 
@@ -100,6 +98,4 @@ src/
 ## 📄 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
 
-Feel free to adjust or expand this depending on what else you want to show! Want to add explanations of the event listeners too?
