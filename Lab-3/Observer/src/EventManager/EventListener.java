@@ -1,4 +1,5 @@
 package EventManager;
+
 import java.io.File;
 
 public interface EventListener {

@@ -1,5 +1,4 @@
 package EventManager;
-
 import java.io.File;
 
 public class LogOpenListener implements EventListener {
