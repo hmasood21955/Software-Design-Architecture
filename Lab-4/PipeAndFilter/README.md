@@ -1,18 +1,22 @@
-## Getting Started
+# Pipe and Filter Pattern in Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This project demonstrates the **Pipe and Filter** design pattern in Java. It processes a list of numbers through a series of transformations using functional programming.
 
-## Folder Structure
+## Features
+- Filters even numbers from the list
+- Squares each number
+- Adds 5 to each number
+- Filters numbers greater than 10
+- Keeps numbers divisible by 3
 
-The workspace contains two folders by default, where:
+## How It Works
+The program applies a series of transformations to a list of numbers step by step:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. **Filter Even Numbers** → `[1,2,3,4,5,6,7,8,9,10]` → `[2,4,6,8,10]`
+2. **Square Numbers** → `[2,4,6,8,10]` → `[4,16,36,64,100]`
+3. **Add 5 to Each Number** → `[4,16,36,64,100]` → `[9,21,41,69,105]`
+4. **Filter Numbers Greater Than 10** → `[9,21,41,69,105]` → `[21,41,69,105]`
+5. **Filter Numbers Divisible by 3** → `[21,41,69,105]` → `[21,69,105]`
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Final Output
+[21, 69, 105]
