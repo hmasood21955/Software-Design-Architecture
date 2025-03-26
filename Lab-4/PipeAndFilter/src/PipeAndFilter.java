@@ -10,11 +10,13 @@ public class PipeAndFilter {
 
         // Create a pipeline
         List<Function<List<Integer>, List<Integer>>> filters = new ArrayList<>();
-        filters.add(PipeAndFilter::filterEvenNumbers);
-        filters.add(PipeAndFilter::squareNumbers);
-        filters.add(PipeAndFilter::filterNumbersGreaterThanTen);
+        filters.add(PipeAndFilter::filterEvenNumbers);  // Step 1: Keep only even numbers
+        filters.add(PipeAndFilter::squareNumbers);      // Step 2: Square the numbers
+        filters.add(PipeAndFilter::filterNumbersGreaterThanTen);  // Step 4: Keep numbers > 10
 
+    
         // Process the input through the pipeline
+
         List<Integer> result = processPipeline(input, filters);
 
         // Output the result
@@ -44,11 +46,13 @@ public class PipeAndFilter {
                 .collect(Collectors.toList());
     }
 
+
+
     // Filter to keep numbers greater than 10
+
     private static List<Integer> filterNumbersGreaterThanTen(List<Integer> input) {
         return input.stream()
                 .filter(n -> n > 10)
                 .collect(Collectors.toList());
     }
 }
-
