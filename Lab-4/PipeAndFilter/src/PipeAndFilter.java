@@ -24,13 +24,11 @@ public class PipeAndFilter {
         // Output the result
         System.out.println(result);
     }
-      
         private static List<Integer> addFiveToNumbers(List<Integer> input) {
             return input.stream()
                     .map(n -> n + 5)
                     .collect(Collectors.toList());
         }
-
         private static List<Integer> filterDivisibleByThree(List<Integer> input) {
             return input.stream()
                     .filter(n -> n % 3 == 0)
