@@ -31,6 +31,12 @@ public class PipeAndFilter {
                     .collect(Collectors.toList());
         }
 
+        private static List<Integer> filterDivisibleByThree(List<Integer> input) {
+            return input.stream()
+                    .filter(n -> n % 3 == 0)
+                    .collect(Collectors.toList());
+        }
+
     // Process the input through the pipeline of filters
     private static List<Integer> processPipeline(List<Integer> input, List<Function<List<Integer>, List<Integer>>> filters) {
         List<Integer> output = input;
