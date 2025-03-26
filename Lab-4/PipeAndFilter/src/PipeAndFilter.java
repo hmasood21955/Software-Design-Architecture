@@ -24,6 +24,12 @@ public class PipeAndFilter {
         // Output the result
         System.out.println(result);
     }
+      
+        private static List<Integer> addFiveToNumbers(List<Integer> input) {
+            return input.stream()
+                    .map(n -> n + 5)
+                    .collect(Collectors.toList());
+        }
 
     // Process the input through the pipeline of filters
     private static List<Integer> processPipeline(List<Integer> input, List<Function<List<Integer>, List<Integer>>> filters) {
