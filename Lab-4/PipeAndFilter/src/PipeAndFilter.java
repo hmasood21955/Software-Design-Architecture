@@ -14,6 +14,7 @@ public class PipeAndFilter {
         filters.add(PipeAndFilter::squareNumbers);      // Step 2: Square the numbers
         filters.add(PipeAndFilter::addFiveToNumbers);   // Step 3: Add 5 to each number
         filters.add(PipeAndFilter::filterNumbersGreaterThanTen);  // Step 4: Keep numbers > 10
+        filters.add(PipeAndFilter::filterDivisibleByThree); // Step 5: Keep numbers divisible by 3
 
     
         // Process the input through the pipeline
