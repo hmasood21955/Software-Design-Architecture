@@ -12,6 +12,7 @@ public class PipeAndFilter {
         List<Function<List<Integer>, List<Integer>>> filters = new ArrayList<>();
         filters.add(PipeAndFilter::filterEvenNumbers);  // Step 1: Keep only even numbers
         filters.add(PipeAndFilter::squareNumbers);      // Step 2: Square the numbers
+        filters.add(PipeAndFilter::addFiveToNumbers);   // Step 3: Add 5 to each number
         filters.add(PipeAndFilter::filterNumbersGreaterThanTen);  // Step 4: Keep numbers > 10
 
     
