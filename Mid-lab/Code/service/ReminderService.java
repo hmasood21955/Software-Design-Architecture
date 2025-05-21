@@ -14,4 +14,12 @@ public class ReminderService {
     public List<Reminder> getReminders() {
         return new ArrayList<>(reminders);
     }
-} 
+
+    public List<String> getAvailableTimes() {
+        List<String> times = new ArrayList<>();
+        for (int h = 8; h <= 20; h++) {
+            times.add(String.format("%02d:00", h));
+        }
+        return times;
+    }
+}
