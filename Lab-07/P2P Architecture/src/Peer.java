@@ -3,10 +3,10 @@ import java.net.*;
 public class Peer {
  private static final int PORT = 5000;
  public static void main(String[] args) throws IOException {
- // Create server socket to listen for incoming connections
+
  ServerSocket serverSocket = new ServerSocket(PORT);
  System.out.println("Peer is listening on port " + PORT);
- // Thread to handle incoming connections
+
  Thread serverThread = new Thread(() -> {
  try {
  while (true) {
@@ -21,7 +21,7 @@ public class Peer {
  }
  });
  serverThread.start();
- // Connect to another peer and send a message
+
  try (Socket socket = new Socket("localhost", PORT)) {
  PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
  out.println("Hello from peer!");
