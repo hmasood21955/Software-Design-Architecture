@@ -42,8 +42,8 @@ public class Peer {
                     out.println(msg);
                 }
                 if (msg.equalsIgnoreCase("exit")) break;
-            }
-        }
+    }
+}
         // Wait for receive thread to finish
         try { receiveThread.join(); } catch (InterruptedException ignored) {}
         System.out.println("Chat ended.");
