@@ -1,9 +1,8 @@
-package code;
 
 import code.controller.ReminderController;
 import code.service.NotificationScheduler;
-import code.service.TaskService;
 import code.service.ReminderService;
+import code.service.TaskService;
 import code.view.UIPage;
 
 public class Main {
