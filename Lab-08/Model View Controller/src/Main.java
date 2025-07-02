@@ -10,10 +10,8 @@ public class Main {
         View view = new View();
         Controller controller = new Controller(student, summaryModel, view);
 
-        // Update and display
         controller.updateView();
 
-        // Change data and display again
         controller.setStudentName("Sara");
         controller.setStudentRollNumber(102);
         controller.setStudentMarks(95.0);
