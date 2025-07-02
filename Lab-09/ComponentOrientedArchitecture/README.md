@@ -1,5 +1,8 @@
 # Component Oriented Library Application
 
+## Description
+Component-oriented architecture is a software design approach that emphasizes the separation of concerns by dividing a system into reusable, loosely coupled, and independently deployable components. Each component encapsulates its own functionality and interacts with others through well-defined interfaces. This approach improves maintainability, scalability, and testability of software systems.
+
 ## Overview
 This is a simple component-oriented Java application for managing a library of books. It demonstrates separation of concerns using interfaces and components for storage, logging, and business logic.
 
