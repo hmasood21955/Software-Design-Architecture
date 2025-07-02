@@ -1,2 +1,0 @@
-// This file is intentionally left empty. All classes have been split into their own files.
-// Please use Book.java, LibraryService.java, LibraryStorage.java, LibraryComponent.java, and MainApp.java for the runnable code.
